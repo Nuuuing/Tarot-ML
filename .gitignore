@@ -1,0 +1,52 @@
+# Python 관련 무시할 파일
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.Python/
+build/
+dist/
+develop-eggs/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.extensions
+
+# 가상 환경 (venv)
+venv/
+.venv/
+env/
+.env/
+
+# 운영체제 관련 파일
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Hugging Face Transformers 및 Datasets 관련
+# 캐시 파일 (모델 다운로드, 데이터셋 캐시 등)
+.cache/
+hf-cache/ # Hugging Face 관련 캐시 폴더가 있다면 추가
+huggingface/
+
+# 모델 체크포인트 및 저장 경로
+model/ # 모델 저장 폴더 전체를 무시
+# 특정 모델만 무시하고 싶다면:
+# model/tarot-koT5/ # 이 경우, model 폴더는 추적하지만 tarot-koT5만 무시
+
+# Jupyter/IPython 관련 (만약 사용한다면)
+.ipynb_checkpoints
+*.ipynb
+
+# 로그 파일
+*.log
+
+# 임시 파일
+*~
+*.bak
+*.tmp
