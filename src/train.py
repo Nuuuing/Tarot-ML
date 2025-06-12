@@ -21,8 +21,8 @@ except ValueError as e:
 # Pandas DataFrame을 Hugging Face Dataset으로 변환
 dataset = Dataset.from_pandas(df)
 
-# 2. 토크나이저와 모델 로드 (`KETI-AI/koT5-small` 모델)
-model_name = "KETI-AI/koT5-small" 
+# 2. 토크나이저와 모델 로드 (`KETI-AIR/ke-t5-small` 모델)
+model_name = "KETI-AIR/ke-t5-small" 
 tokenizer = T5Tokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name) 
 
